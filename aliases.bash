@@ -60,7 +60,7 @@ alias ipynb='sudo ipython notebook --profile=dst'
 
 # R
 # alias R='source activate R && R'
-
+alias R='R_PROFILE_USER=~/.bash/R.profile R'
 # Dotfiles
 alias zrc='vim $HOME/.zshrc && source ~/.zshrc'
 alias brc='vim $HOME/.bashrc && source ~/.bashrc'
