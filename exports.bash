@@ -40,8 +40,8 @@ export PERL5LIB MANPATH
 # export R_LIBS="$DATADIR/R:$R_LIBS"
 # export PATH=$BINDIR/R/bin:$PATH
 # export PATH=$BINDIR/bin:$PATH
-
-## python module customize location
+export R_PROFILE_USER=$HOME/.bash/R.profile
+# python module customize location
 # alias python='$BINDIR/python2.7/bin/python'
 # export PATH=$BINDIR/python2.7/bin:$PATH
 # PY_LIBS="$BINDIR/py_libs"
