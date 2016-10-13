@@ -8,13 +8,14 @@ export HISTTIMEFORMAT="$(echo -e ${BCyan})[%d/%m %H:%M:%S]$(echo -e ${NC}) "
 export HOSTFILE=$BASHDIR/.hosts    # Put a list of remote hosts in $DATADIR/.hosts
 #export LC_CTYPE=en_us.UTF-8
 #export LC_ALL=en_us.UTF-8
+export MANPATH="$HOME/opt/man:/usr/local/man:$MANPATH"
 #LD_LIBRARY
 # function gfortran()
 #	{
 #	export LD_LIBRARY_PATH=$BINDIR/lib:$BINDIR/lib64:$BINDIR/lib64/gmp-6.0.0/include:$BINDIR/lib64/gmp-6.0.0/lib:$LD_LIBRARY_PATH
 #	/usr/local/gcc-4.8/bin/gfortran "$@"
 #	}
- export LD_LIBRARY_PATH=$BINDIR/lib:$BINDIR/lib64:$BINDIR/lib64/mpfr-3.1.2:$BINDIR/lib64/gmp-6.0.0:$BINDIR/lib64/mpc-1.0.2:/opt/SRC/gcc-4.8.2/build/x86_64-redhat-linux/32/libquadmath/.libs:/opt/SRC/gcc-4.8.2/build/x86_64-redhat-linux/32/libquadmath/.libs:/opt/SRC/gcc-4.8.2/build/x86_64-redhat-linux/libquadmath/.libs:/opt/SRC/gcc-4.8.2/build/x86_64-redhat-linux/libquadmath/.libs:$LD_LIBRARY_PATH
+export LD_LIBRARY_PATH=$BINDIR/lib:$BINDIR/lib64:$BINDIR/lib64/mpfr-3.1.2:$BINDIR/lib64/gmp-6.0.0:$BINDIR/lib64/mpc-1.0.2:/opt/SRC/gcc-4.8.2/build/x86_64-redhat-linux/32/libquadmath/.libs:/opt/SRC/gcc-4.8.2/build/x86_64-redhat-linux/32/libquadmath/.libs:/opt/SRC/gcc-4.8.2/build/x86_64-redhat-linux/libquadmath/.libs:/opt/SRC/gcc-4.8.2/build/x86_64-redhat-linux/libquadmath/.libs:$LD_LIBRARY_PATH
 
 #perl environment
 
