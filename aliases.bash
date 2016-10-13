@@ -18,6 +18,7 @@ alias nano='nano -w'
 alias psi='ps h -eo pmem,comm | sort -nr | head'
 alias debug="set -o nounset; set -o xtrace"
 alias sudo='sudo PATH=$PATH HOME=$HOME LD_LIBRARY_PATH=$LD_LIBRARY_PATH'
+alias nohup='nohup $1 >${LOG}/${1}.`date "+%b-%d-%H-%M-%S"`.out || echo -e "\a"'
 
 # List
 alias ls='ls -F'
