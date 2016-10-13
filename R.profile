@@ -75,10 +75,6 @@ utils::rc.settings(ipck=TRUE)
   }
 }
 
-# get pretty output colors in the terminal
-if(Sys.getenv("TERM") == "xterm-256color")
-  library("colorout")
-
 # get noisy package imports to shut up
 #   we have to jump through hoops to get the
 #   call to "library()" to work because it
