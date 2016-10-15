@@ -86,7 +86,7 @@ sshhh <- function(a.package){
 }
 
 # list of packages to auto-load if interactive
-auto.loads <-c("dplyr", "ggplot2", "magrittr", "assertr", "reshape")
+auto.loads <-c("dplyr", "ggplot2", "magrittr", "assertr", "reshape2")
 
 # auto-load dplyr and ggplot2
 if(interactive()){
