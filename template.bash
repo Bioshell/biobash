@@ -10,9 +10,16 @@ touchR(){
         InfileN=$(basename ${Infile}); InfileN=${InfileN%.*}
     fi
     touch ${Infolder}/${InfileN}.R
-    cat > ${Infolder}/${InfileN}.R <<'EOI'
-    test
-    test
+    cat > ${Infolder}/${InfileN}.R << EOI
+        # Author: Zhou Shyi
+        # Email: zhoushiyi25@hotmail.com
+        `date "+# DATE: %Y-%b-%d"`
+        # --------------
+        # Author:
+        # Date:
+        # Modification:
+        # --------------
+    
 EOI
     unset Infile Infolder InfileN
 }
