@@ -184,8 +184,8 @@ lastmodified="26 Feb 2015"
    else
    Infile=$1
      if [ "$(dirname $Infile)" = "." ]; then
-	 Infile=$(basename $Infile)
-         Infile=$(find `pwd` -type f -name $Infile)	
+	 Infile=`pwd`/$(basename $Infile)
+     #    Infile=$(find `pwd` -type f -name $Infile)	
      fi
    Infolder=$(dirname ${Infile})
    InfileN=$(basename ${Infile}); InfileN=${InfileN%.*}
