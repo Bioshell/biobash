@@ -3,7 +3,7 @@
 local({r <- getOption("repos")
       r["CRAN"] <- "http://cran.revolutionanalytics.com"
       options(repos=r)})
-
+source("https://bioconductor.org/biocLite.R")
 
 #############
 ## OPTIONS ##
