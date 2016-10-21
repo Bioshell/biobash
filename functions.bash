@@ -502,9 +502,9 @@ lastmodified="26 Feb 2015"
 	 ;;
 	hg19 | HG19 | GRC37)
         #reference=$DATABASE/GATK/ucsc.hg19.fasta
-         reference=$DATABASE/UCSC/homo/hg19.fasta
-         dbsnp=$DATABASE/GATK/dbsnp_138.hg19.vcf
-         hapmap=$DATABASE/GATK/hapmap_3.3.hg19.vcf
+     reference=$DATABASE/UCSC/homo/hg19.fasta
+     dbsnp=$DATABASE/GATK/dbsnp_138.hg19.vcf
+     hapmap=$DATABASE/GATK/hapmap_3.3.hg19.vcf
 	 kgindels=$DATABASE/GATK/Mills_and_1000G_gold_standard.indels.hg19.vcf
 	 kgsnps=$DATABASE/GATK/1000G_phase1.snps.high_confidence.hg19.vcf
 	 kgomni=$DATABASE/GATK/1000G_omni2.5.hg19.vcf
