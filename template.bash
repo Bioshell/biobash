@@ -79,3 +79,22 @@ EOI
 fi
     unset Infile Infolder InfileN
 }
+
+touchsh(){
+    if [ -z "$1" ]; then
+        echo -e "Usage:"
+    else
+        INFILE $1
+    fi
+    if [ -s "${Infolder}/${InfileN}.sh" ]; then
+        echo -e "File exists and is not empty.."
+    else
+        touch ${Infolder}/${InfileN}.sh
+        cat > ${Infolder}/${InfileN}.sh << EOI
+`echo -e "#!$(which bash)"`
+source ~/.bashrc
+
+EOI
+fi
+    unset Infile Infolder InfileN
+}
