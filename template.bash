@@ -93,6 +93,8 @@ touchsh(){
         cat > ${Infolder}/${InfileN}.sh << EOI
 `echo -e "#!$(which bash)"`
 source ~/.bashrc
+#' @author `echo -e "$user <$EMAIL>"`
+`date "+#' @date %Y-%b-%d"`
 
 EOI
 fi
